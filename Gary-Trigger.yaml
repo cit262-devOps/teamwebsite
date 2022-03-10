@@ -24,8 +24,8 @@ steps:
   id: Deploy Pod to Kubernetes
   args:
     - run
-    - --filename=Gary-Trigger.yaml
+    - --filename=gary-pod.yaml
     - --image=gcr.io/team-project-platform-stcg/teamwebsite:latest
-    - --location=us-east1-b
+    - --location=us-central1-c
     - --cluster=cluster-1
   
