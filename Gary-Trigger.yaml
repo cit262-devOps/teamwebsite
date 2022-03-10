@@ -24,7 +24,7 @@ steps:
   id: Deploy Pod to Kubernetes
   args:
     - run
-    - --file=gary-pod.yaml
+    - --filename=gary-pod.yaml
     - --image=gcr.io/team-project-platform-stcg/teamwebsite:latest
     - --location=us-central1-c
     - --cluster=cluster-1
