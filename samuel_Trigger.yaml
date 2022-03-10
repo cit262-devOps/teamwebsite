@@ -6,7 +6,7 @@ steps:
   - 'build'
   - '.'
   - '-t'
-  - 'gcr.io/$PROJECT_ID/teamwebsite:latest'
+  - 'gcr.io/team-project-platform-stcg/teamwebsite:latest'
 
 
 # This step pushes the image to Container Registry
@@ -16,7 +16,7 @@ steps:
   id: Push
   args:
   - 'push'
-  - 'gcr.io/$PROJECT_ID/teamwebsite:latest'
+  - 'gcr.io/team-project-platform-stcg/teamwebsite:latest'
 
   
       # This step deploys the application in Kubernetes
@@ -25,6 +25,6 @@ steps:
     args:
       - run
       - --filename=dev.yaml
-      - --image=gcr.io/$PROJECT_ID/teamwebsite:$SHORT_SHA
+      - --image=gcr.io/team-project-platform-stcg/teamwebsite:$SHORT_SHA
       - --location=us-east1-b
       - --cluster=cluster-1
