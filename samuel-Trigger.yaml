@@ -24,7 +24,7 @@ steps:
   id: Deploy Pod to Kubernetes
   args:
     - run
-    - --file=sam-pod.yaml
+    - --filename=sam-pod.yaml
     - --image=gcr.io/team-project-platform-stcg/teamwebsite:$SHORT_SHA
     - --location=us-east1-b
     - --cluster=cluster-1
