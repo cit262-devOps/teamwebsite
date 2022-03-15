@@ -24,6 +24,6 @@ steps:
   args:
     - run
     - --filename=travis-pod.yaml
-    - --image=gcr.io/$PROJECT_ID/teamwebsite:$SHORT_SHA
+    - --image=gcr.io/$PROJECT_ID/teamwebsite:latest
     - --location=us-central1-c
     - --cluster=cluster-1
