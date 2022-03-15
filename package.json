@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/cit262-devOps/teamwebsite/issues"
   },
-  "homepage": "https://github.com/cit262-devOps/teamwebsite#readme"
+  "homepage": "https://github.com/cit262-devOps/teamwebsite#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
 }
