@@ -25,6 +25,6 @@ steps:
   args:
     - run
     - --filename=sam-pod.yaml
-    - --image=gcr.io/team-project-platform-stcg/teamwebsite:$SHORT_SHA
-    - --location=us-east1-b
+    - --image=gcr.io/team-project-platform-stcg/teamwebsite:latest
+    - --location=us-central1-c
     - --cluster=cluster-1
