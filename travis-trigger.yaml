@@ -25,5 +25,5 @@ steps:
     - run
     - --filename=travis-pod.yaml
     - --image=gcr.io/$PROJECT_ID/teamwebsite:$SHORT_SHA
-    - --location=us-east1-b
+    - --location=us-central1-c
     - --cluster=cluster-1
