@@ -16,7 +16,7 @@ spec:
       - name: sam-kleine
         image: gcr.io/team-project-platform-stcg/teamwebsite:latest
         ports:
-        - containerPort: 80
+        - containerPort: 3000
         resources:
           limits:
             cpu: 100m
