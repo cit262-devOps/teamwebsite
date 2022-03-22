@@ -28,7 +28,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: samuelApp-sam-pod-service
+  name: samuelapp-sam-pod-service
 spec:
   selector:
     app: sam-kleine
