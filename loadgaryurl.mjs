@@ -1,10 +1,9 @@
 import fetch from "node-fetch";
 
-const loadgaryurl = async ({userName, password})=>{
+const loadgaryurl = async ()=>{
     
     const options = {
     method: "GET",
-    body: JSON.stringify({userName, password}),
     headers: {"Content-Type":"application/json"}
     };
 
