@@ -7,7 +7,7 @@ const loadgaryurl = async ()=>{
     headers: {"Content-Type":"application/json"}
     };
 
-    const apiResponse = await fetch("localhost:3000", options);
+    const apiResponse = await fetch("https://34.123.4.180/gary", options);
     const testResponse = await apiResponse.text();
     return testResponse;
 };
