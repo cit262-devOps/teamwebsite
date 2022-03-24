@@ -1,5 +1,6 @@
 {
   "name": "teamwebsite",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -18,6 +19,9 @@
   },
   "homepage": "https://github.com/cit262-devOps/teamwebsite#readme",
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "mocha": "^9.2.2",
+    "node-fetch": "^3.2.3"
   }
+ 
 }
