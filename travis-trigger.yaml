@@ -23,7 +23,7 @@ steps:
   id: Deploy Pod to Kubernetes
   args:
     - run
-    - --filename=dev.yaml
-    - --image=gcr.io/$PROJECT_ID/teamwebsite:$SHORT_SHA
-    - --location=us-east1-b
+    - --filename=travis-pod.yaml
+    - --image=gcr.io/$PROJECT_ID/teamwebsite:latest
+    - --location=us-central1-c
     - --cluster=cluster-1

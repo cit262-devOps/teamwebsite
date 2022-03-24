@@ -19,12 +19,12 @@ steps:
   - 'gcr.io/team-project-platform-stcg/teamwebsite:latest'
 
   
-      # This step deploys the application in Kubernetes
-  - name: 'gcr.io/cloud-builders/gke-deploy'
-    id: Deploy Pod to Kubernetes
-    args:
-      - run
-      - --filename=dev.yaml
-      - --image=gcr.io/team-project-platform-stcg/teamwebsite:$SHORT_SHA
-      - --location=us-east1-b
-      - --cluster=cluster-1
+# This step deploys the application in Kubernetes
+- name: 'gcr.io/cloud-builders/gke-deploy'
+  id: Deploy Pod to Kubernetes
+  args:
+    - run
+    - --filename=sam-pod.yaml
+    - --image=gcr.io/team-project-platform-stcg/teamwebsite:latest
+    - --location=us-central1-c
+    - --cluster=cluster-1
