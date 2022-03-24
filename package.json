@@ -1,0 +1,30 @@
+{
+  "name": "teamwebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "loadgary.test.js",
+  "type": "module",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cit262-devOps/teamwebsite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cit262-devOps/teamwebsite/issues"
+  },
+  "homepage": "https://github.com/cit262-devOps/teamwebsite#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mocha": "^9.2.2",
+    "node-fetch": "^3.2.3"
+  }
+}
