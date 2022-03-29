@@ -38,7 +38,7 @@ steps:
   - 'NODE_ENV=development'
   args:
   - 'run'
-  - 'gcr.io/$PROJECT_ID/constellationautotest:latest'
+  - 'gcr.io/$PROJECT_ID/teamwebsite:latest'
   - 'npm'
   - 'run'
   - 'test'
