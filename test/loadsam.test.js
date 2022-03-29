@@ -1,4 +1,4 @@
-import loadsamurl from '..utils/loadsamurl.mjs';
+import loadsamurl from '../utils/loadsamurl.mjs';
 import assert from 'assert';
 
 it("Tests Sam URL endpoint",async ()=>{

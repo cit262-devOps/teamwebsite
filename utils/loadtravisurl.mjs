@@ -1,4 +1,5 @@
 import fetch from 'node-fetch';
+import loadsamurl from '../utils/loadtravisurl.mjs';
 
 const loadsamurl = async () => {
 
