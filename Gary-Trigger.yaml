@@ -41,4 +41,4 @@ steps:
   - 'gcr.io/team-project-platform-stcg/teamwebsite:latest'
   - 'npm'
   - 'run'
-  - 'test-dev'
+  - 'test'
