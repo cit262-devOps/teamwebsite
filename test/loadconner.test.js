@@ -1,5 +1,5 @@
-import assert from 'assert';
 import loadconnerurl from "../utils/loadconnerurl.mjs";
+import assert from 'assert';
 
 it("Tests conner URL Endpoint", async () => {
     

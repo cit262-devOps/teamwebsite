@@ -19,18 +19,17 @@ steps:
   - 'push'
   - 'gcr.io/team-project-platform-stcg/teamwebsite:latest'
 
-# Run
 - name: 'gcr.io/cloud-builders/gke-deploy'
   id: Deploy Pod to Kubernetes
   args:
-    - run
-    - --filename=conner-pod.yaml
-    - --image=gcr.io/team-project-platform-stcg/teamwebsite:latest
-    - --location=us-central1-c
-    - --cluster=cluster-1
+  - run
+  - --filename=conner-pod.yaml
+  - --image=gcr.io/team-project-platform-stcg/teamwebsite:latest
+  - --location=us-central1-c
+  - --cluster=cluster-1
 
-# test
-  - name: 'gcr.io/cloud-builders/docker'
+
+- name: 'gcr.io/cloud-builders/docker'
   id: run
   env:
   - 'NODE_ENV=development'
