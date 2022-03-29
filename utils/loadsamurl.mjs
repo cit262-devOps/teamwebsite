@@ -7,7 +7,7 @@ const loadsamurl = async () => {
         headers: {'Content-Type':'application/json'}
     };
 
-    const apiResponse = await fetch('https://35.223.172.119/sam-kleine',options);
+    const apiResponse = await fetch('http://35.223.172.119/sam',options);
     const loginResponse = await apiResponse.text();
     // console.log("LoginToken: ", loginResponse);
     return loginResponse;
