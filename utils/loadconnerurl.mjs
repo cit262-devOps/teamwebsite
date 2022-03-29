@@ -8,6 +8,7 @@ const loadconnerurl = async ()=>{
     };
 
     const apiResponse = await fetch("http://34.72.62.27/conner", options);
+    // const apiResponse = await fetch("http://localhost:3000/conner", options);
     const testResponse = await apiResponse.text();
     return testResponse;
 };
