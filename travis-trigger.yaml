@@ -27,3 +27,18 @@ steps:
     - --image=gcr.io/$PROJECT_ID/teamwebsite:latest
     - --location=us-central1-c
     - --cluster=cluster-1
+
+
+# This step runs the ConstellationTests Image 
+# The PROJECT_ID variable is automatically
+# replaced by Cloud Build.
+- name: 'gcr.io/cloud-builders/docker'
+  id: run
+  env:
+  - 'NODE_ENV=development'
+  args:
+  - 'run'
+  - 'gcr.io/$PROJECT_ID/teamwebsite:latest'
+  - 'npm'
+  - 'run'
+  - 'test'
