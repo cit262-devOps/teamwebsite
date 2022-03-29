@@ -24,9 +24,18 @@ steps:
     args:
       - run
       - --filename=conner-pod.yaml
-      - --image=gcr.io/team-project
-      - --location=us-east1-b
+      - --image=gcr.io/team-project-platform-stcg/teamwebsite:latest
+      - --location=us-central1-c
       - --cluster=cluster-1
 
 
-  
+  - name: 'gcr.io/cloud-builders/docker'
+  id: run
+  env:
+  - 'NODE_ENV=development'
+  args:
+  - 'run'
+  - 'gcr.io/team-project-platform-stcg/teamwebsite:latest'
+  - 'npm'
+  - 'run'
+  - 'test'
